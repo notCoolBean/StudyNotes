@@ -1,4 +1,5 @@
-![headpic](/assets/images/go.png "headpic")
+<div align="center">![headpic](/assets/images/go.png)</div>
+-
 
 > 一个前端的自学Go之路，艰难而不放弃，希望有好的结果！
 

@@ -1,4 +1,5 @@
-![headpic](/assets/images/node.png "headpic")
+<div align="center">![headpic](/assets/images/node.png)</div>
+-
 
 > Node 折腾之路！
 

@@ -1,4 +1,5 @@
-![headpic](/assets/images/react.png "headpic")
+<div align="center">![headpic](/assets/images/react.png)</div>
+-
 
 > React 学习研究之路！
 

@@ -1,4 +1,5 @@
-![headpic](/assets/images/vue.png "headpic")
+<div align="center">![headpic](/assets/images/vue.png)</div>
+-
 
 > Vue 学习折腾之路！
 
