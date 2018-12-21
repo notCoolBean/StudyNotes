@@ -1,4 +1,6 @@
-<div align="center">![headpic](/assets/images/headpic.png)</div>
+<div align="center">
+  <img src="assets/images/headpic.png"/>
+</div>
 
 > 文章采用[知识共享署名 4.0 国际许可协议](https://creativecommons.org/licenses/by/4.0/deed.zh)进行许可。喜欢的可以点下 watch 或 star。
 
