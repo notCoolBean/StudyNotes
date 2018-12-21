@@ -12,8 +12,7 @@
 <details>
   <summary>Vue</summary>
 
-- [ ] [Vue Learning Recouse Records](https://github.com/notCoolBean/StudyNotes/tree/master/Vue)
-- [ ] [Vue From 0 To 1] 
+- [ ] [Vue From 0 To 1](https://github.com/notCoolBean/StudyNotes/tree/master/Vue)
 
 </details>
 
