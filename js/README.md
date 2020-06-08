@@ -2,11 +2,12 @@
  * @Author: BeanDou
  * @LastEditors: BeanDou
  * @Date: 2020-06-08 10:02:46
- * @LastEditTime: 2020-06-08 10:11:19
+ * @LastEditTime: 2020-06-08 10:32:06
  * @Description: File description
 -->
-<div align="center">![headpic](/assets/images/js.jpg)</div>
--
+<div align="center">
+  <img src="../assets/images/js.jpg"/>
+</div>
 
 > 一个前端学习JS之路，艰难而不放弃，希望有好的结果！
 
