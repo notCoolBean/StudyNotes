@@ -19,13 +19,6 @@
 </details>
 
 <details>
-  <summary>Go</summary>
-
-- [ ] [Go Learning Records](https://github.com/notCoolBean/StudyNotes/tree/master/Go)
-
-</details>
-
-<details>
   <summary>Vue</summary>
 
 - [ ] [Vue From 0 To 1](https://github.com/notCoolBean/StudyNotes/tree/master/Vue)
