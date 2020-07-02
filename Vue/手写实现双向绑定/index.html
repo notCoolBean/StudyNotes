@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="input" type="text">
+</body>
+<script>
+  (function() {
+    let = obj = window.obj = {
+      value: 111
+    }
+
+    let input = document.querySelector('#input');
+
+    input.addEventListener('input', (e) => {
+      obj.value = e.target.value;
+    })
+
+    function observe (obj) {
+      for (let i in obj) {
+        defineReact(obj, i, obj[i]);
+      }
+    }
+
+    function defineReact (obj, name, val) {
+      Object.defineProperty(obj, name, {
+          get() {
+            return val;
+          },
+          set(newValue) {
+            if (val === newValue) return;
+            console.log(`设置${name}值为${newValue}`);
+            input.value = newValue;
+            val = newValue;
+          }
+        })
+    }
+
+    observe(obj);
+  })()
+</script>
+</html>
