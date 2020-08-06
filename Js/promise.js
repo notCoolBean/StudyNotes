@@ -2,9 +2,9 @@
  * @Author: Bean
  * @LastEditors: Bean
  * @Date: 2020-07-16 10:14:49
- * @LastEditTime: 2020-07-17 08:39:53
+ * @LastEditTime: 2020-07-18 16:09:31
  * @Description: file content
- * @FilePath: /github/StudyNotes/Js/promise.js
+ * @FilePath: /StudyNotes/Js/promise.js
  */ 
 
 class MyPromise {
@@ -54,22 +54,35 @@ class MyPromise {
   }
 }
 
-let a = new MyPromise((resolve, reject) => {
+function all(iterator) {
+  let count = 0;//用于计数，当等于len时就resolve
+  let len = iterator.length;
+  let result = new Array(len);//用于存放结果
+  return new Promise((resolve,reject) => {
+    for (let i = 0; i < len; i++) {
+      iterator[i].then(res => {
+        count++;
+        result[i] = res;
+        if (count === len) {
+          resolve(result);
+        }
+      }, err => {
+        reject(err);
+      })
+    }
+  })
+}
+
+let a = new Promise((resolve, reject) => {
   resolve(111);
 })
-console.log('a', a);
-let b = a.then(res => {
-  return new MyPromise((resolve, reject) => {
+
+let b = new Promise((resolve, reject) => {
+  setTimeout(() => {
     resolve(222);
-  })
-}).then(res => {
-  console.log(res);
-  return new MyPromise((resolve, reject) => {
-    reject(222);
-  })
-}).then(res => {
-  console.log(res);
-}, err => {
-  console.log('333err', err)
+  }, 1000);
 })
-console.log('b', b);
+
+all([b, a]).then(res => console.log(res));
+
+Promise.all([b, a]).then(res => console.log(res));
